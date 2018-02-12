@@ -1,0 +1,19 @@
+{
+  "name": "algiucla",
+  "version": "1.0.0",
+  "description": "## Use TDD to build a To-do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiC-1/Week2_project_algiucla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiC-1/Week2_project_algiucla/issues"
+  },
+  "homepage": "https://github.com/TiC-1/Week2_project_algiucla#readme"
+}
