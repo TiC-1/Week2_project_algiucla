@@ -22,10 +22,11 @@ test('Example test', function(t) {
     },
     {
     id: 2,
-    description: '123',
+    description: '1234',
     done: false,
     },
   ];
+  console.log(todos);
   t.deepEquals(todosList, expectedTodosList);
   t.end();
 });
@@ -51,8 +52,38 @@ test('Delete test', function(t) {
     done: false,
     },
   ];
+  console.log(existingTodos);
   t.deepEquals(todos, expectedTodos);
+  t.end();
+});
 
-
+test('Mark', function(t) {
+  var existingTodos = [
+    {
+    id: 1,
+    description: '324',
+    done: false,
+    },
+    {
+    id: 2,
+    description: '1234',
+    done: false,
+    },
+  ];
+  var todos = logic.markTodo(existingTodos, 2);
+  var expectedTodos = [
+    {
+    id: 1,
+    description: '324',
+    done: false,
+    },
+    {
+    id: 2,
+    description: '1234',
+    done: true,
+    },
+  ];
+  console.log(existingTodos);
+  t.deepEquals(todos, expectedTodos);
   t.end();
 });
