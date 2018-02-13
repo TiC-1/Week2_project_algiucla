@@ -58,9 +58,9 @@ var todoFunctions = {
 return todos.map(function(element){
 
   if (idToMark == element.id) {
-    element.done = true;
+    element.done = !element.done;
 }
-return element;
+  return element;
 });
 
 

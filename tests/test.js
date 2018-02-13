@@ -69,6 +69,11 @@ test('Mark', function(t) {
     description: '1234',
     done: false,
     },
+    {
+    id: 3,
+    description: '12345',
+    done: false,
+    },
   ];
   var todos = logic.markTodo(existingTodos, 2);
   var expectedTodos = [
@@ -81,6 +86,11 @@ test('Mark', function(t) {
     id: 2,
     description: '1234',
     done: true,
+    },
+    {
+    id: 3,
+    description: '12345',
+    done: false,
     },
   ];
   console.log(existingTodos);
